@@ -17,4 +17,7 @@ RUN wget -qO - https://packages.confluent.io/deb/7.8/archive.key | apt-key add -
 RUN add-apt-repository "deb https://packages.confluent.io/clients/deb $(lsb_release -cs) main"
 RUN apt update 
 RUN apt install -y librdkafka-dev
+
+# 支持的最高版本 2.6.0
+# RUN pip install --no-binary confluent-kafka confluent-kafka==2.6.0
 RUN pip install --no-binary confluent-kafka confluent-kafka
