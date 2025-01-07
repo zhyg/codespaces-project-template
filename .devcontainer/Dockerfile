@@ -21,4 +21,4 @@ RUN apt install -y librdkafka-dev
 
 # 支持的最高版本 2.6.0
 # RUN pip install --no-binary confluent-kafka confluent-kafka==2.6.0
-RUN pip install --no-binary confluent-kafka confluent-kafka
+# RUN pip install --no-binary confluent-kafka confluent-kafka
