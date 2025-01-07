@@ -3,6 +3,7 @@ FROM ubuntu:22.04
 # 编译 confluent-kafka 支持 kerberos 认证
 # https://github.com/confluentinc/confluent-kafka-python/blob/master/INSTALL.md#install-from-source-on-debian-or-ubuntu
 RUN apt update && apt install -y \
+    git \
     wget \
     software-properties-common \
     lsb-release \
